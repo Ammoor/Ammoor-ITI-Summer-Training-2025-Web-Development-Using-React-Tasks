@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omar Ayman - Personal Profile</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #333;
+        text-align: center;
+        border-bottom: 3px solid #007acc;
+        padding-bottom: 10px;
+      }
+      h2 {
+        color: #007acc;
+        border-left: 4px solid #007acc;
+        padding-left: 15px;
+      }
+      h3 {
+        color: #555;
+        margin-top: 25px;
+      }
+      blockquote {
+        background-color: #f9f9f9;
+        border-left: 4px solid #007acc;
+        margin: 20px 0;
+        padding: 15px;
+        font-style: italic;
+      }
+      fieldset {
+        border: 2px solid #007acc;
+        border-radius: 8px;
+        padding: 20px;
+        margin-top: 20px;
+      }
+      legend {
+        font-weight: bold;
+        color: #007acc;
+        padding: 0 10px;
+      }
+      .highlight {
+        background-color: yellow;
+        padding: 2px 4px;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-top: 20px;
+      }
+      .grid-item {
+        background-color: #f0f8ff;
+        padding: 15px;
+        border-radius: 5px;
+        border: 1px solid #007acc;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      input[type="submit"] {
+        background-color: #007acc;
+        color: white;
+        cursor: pointer;
+        width: auto;
+        padding: 10px 20px;
+      }
+      input[type="submit"]:hover {
+        background-color: #005a9e;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Main heading -->
+      <h1>Omar Ayman</h1>
+
+      <!-- NEW ELEMENT 1: <mark> tag for highlighting important text -->
+      <!-- This element highlights text with a yellow background to draw attention -->
+      <p>
+        <mark class="highlight">Welcome to my personal profile!</mark> I'm
+        excited to share my journey with you.
+      </p>
+
+      <!-- Second level heading -->
+      <h2>About Me</h2>
+
+      <!-- Paragraph about yourself -->
+      <p>
+        Hello! I'm Omar Ayman, a passionate web developer and technology
+        enthusiast. I have been coding for over 3 years and love creating
+        innovative solutions that make people's lives easier. When I'm not
+        coding, you can find me exploring new technologies, reading tech blogs,
+        or hiking in nature.
+      </p>
+
+      <!-- Third level heading -->
+      <h3>My Skills</h3>
+
+      <!-- Unordered list -->
+      <ul>
+        <li>
+          <strong>Programming Languages:</strong> JavaScript, Python, PHP, C++
+        </li>
+        <li><strong>Web Technologies:</strong> HTML5, CSS3, React, Laravel</li>
+        <li><strong>Databases:</strong> MySQL</li>
+        <li><strong>Cloud Platforms:</strong> AWS, Laravel Cloud</li>
+      </ul>
+
+      <!-- Another third level heading -->
+      <h3>My Goals for 2026</h3>
+
+      <!-- Ordered list -->
+      <ol>
+        <li>Get A+ in our graduation project</li>
+        <li>Contribute to 3 open-source projects</li>
+        <li>
+          Build a full-stack app using Laravel that helps people solve one of
+          their problems
+        </li>
+        <li>Get AWS certification</li>
+        <li>Make awesome front-end apps using React</li>
+      </ol>
+
+      <!-- Link to favorite website -->
+      <p>
+        My favorite website for learning new technologies is
+        <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a>
+        - it's an incredible resource for web developers!
+      </p>
+
+      <!-- Blockquote with a favorite quote -->
+      <blockquote>
+        "The best way to predict the future is to create it." - Peter Drucker
+      </blockquote>
+
+      <!-- NEW ELEMENT 2: <details> and <summary> tags for collapsible content -->
+      <!-- These elements create expandable/collapsible sections without JavaScript -->
+      <details>
+        <summary>
+          <strong>Click here to see my current projects</strong>
+        </summary>
+        <div class="grid-container">
+          <div class="grid-item">
+            <h4>E-commerce Platform</h4>
+            <p>Building a Back-End e-commerce solution using Laravel.</p>
+          </div>
+          <div class="grid-item">
+            <h4>AI study partner</h4>
+            <p>
+              An intelligent study assistant that takes PDF documents and
+              automatically generates concise summaries to help students learn
+              more efficiently. The application uses AI technology to extract
+              key concepts, main ideas, and important details from academic
+              papers, textbooks, and research documents, making study sessions
+              more productive and focused.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <!-- NEW ELEMENT 3: <progress> tag to show skill levels -->
+      <!-- This element displays a progress bar to visually represent completion or skill level -->
+      <h3>My Programming Skill Levels</h3>
+      <p>PHP: <progress value="85" max="100">85%</progress> 85%</p>
+      <p>Python: <progress value="70" max="100">70%</progress> 70%</p>
+      <p>C++: <progress value="80" max="100">80%</progress> 80%</p>
+      <p>Laravel: <progress value="75" max="100">75%</progress> 75%</p>
+
+      <!-- Fieldset and legend for contact form -->
+      <fieldset>
+        <legend>Contact Me</legend>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Tell me about your project or just say hello!"
+          ></textarea>
+
+          <input type="submit" value="Send Message" />
+        </form>
+      </fieldset>
+
+      <!-- Footer with additional information -->
+      <footer
+        style="
+          margin-top: 30px;
+          text-align: center;
+          color: #666;
+          border-top: 1px solid #ddd;
+          padding-top: 20px;
+        "
+      >
+        <p>&copy; 2025 Omar Ayman. Always learning, always growing!</p>
+      </footer>
+    </div>
+  </body>
+</html>
