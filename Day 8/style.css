@@ -1,0 +1,118 @@
+/* Start Of Global Rules */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color-1: white;
+  --main-color-2: #8e7754;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+/* Start of section 1 */
+.section-1 {
+  background-image: url("./images/drew-coffman-1872.jpg");
+  height: 100vh;
+}
+.section-1 .header {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  padding: 5rem;
+  margin-bottom: 10rem;
+}
+.section-1 .header img {
+  width: 50%;
+}
+.section-1 .header .links ul {
+  display: flex;
+  gap: 2rem;
+}
+.section-1 .header .links a {
+  color: var(--main-color-1);
+  transition: 0.3s;
+  font-size: 2rem;
+}
+.section-1 .header .links a:hover {
+  color: var(--main-color-2);
+}
+.section-1 .content {
+  text-align: center;
+  color: var(--main-color-1);
+  font-size: 3rem;
+}
+.section-1 .content .text :where(p, h1) {
+  margin-bottom: 2rem;
+}
+.section-1 .content a {
+  color: var(--main-color-1);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  transition: 0.3s;
+}
+.section-1 .content a:last-of-type {
+  border: 0.2rem solid var(--main-color-1);
+}
+.section-1 .content a:first-of-type {
+  background-color: var(--main-color-2);
+}
+.section-1 .content a:hover {
+  background-color: var(--main-color-1);
+  color: var(--main-color-2);
+}
+.section-2 {
+  padding: 8rem 5rem;
+  background-color: #f8f8f8;
+}
+.section-2 .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+}
+.section-2 .image img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.section-2 .text {
+  max-width: 60rem;
+}
+.section-2 .text h2 {
+  color: #303030;
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+}
+.section-2 .text p {
+  font-size: 1.6rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+.section-2 .text ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.6rem;
+  color: #555;
+}
+.section-2 .text ul li {
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 2.5rem;
+}
+.section-2 .text ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: var(--main-color-2);
+}
