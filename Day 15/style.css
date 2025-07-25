@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 960px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+h1 {
+  color: #333;
+}
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+#searchInput {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+#searchBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0069d9;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+#searchBtn:hover {
+  background-color: #0053b3;
+}
+.results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: left;
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.card-body {
+  padding: 15px;
+}
+.card-title {
+  font-size: 18px;
+  margin: 0 0 10px;
+  color: #333;
+}
+.card-publisher {
+  font-size: 14px;
+  color: #777;
+}
